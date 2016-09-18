@@ -1,0 +1,42 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 9, ../sass/screen.scss */
+#picture-container {
+  width: 1500px;
+  height: 667px;
+  position: relative;
+}
+/* line 14, ../sass/screen.scss */
+#picture-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 0.3;
+}
+
+/* line 24, ../sass/screen.scss */
+#a-new-day {
+  position: absolute;
+  overflow: hidden;
+  background: #fff001;
+  background: #eeeeee;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 33, ../sass/screen.scss */
+.background-square-01 {
+  position: absolute;
+  top: 290px;
+  height: 800px;
+  width: 400px;
+  background: #fff001;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
