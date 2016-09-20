@@ -9,6 +9,17 @@ body {
   font-family: 'Baloo Bhaina', cursive;
 }
 
+.romero-britto-circle-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.romero-britto-circle {
+  border-radius: 100%;
+}
+
 #picture-container {
   width: 1500px;
   height: 667px;
@@ -63,17 +74,11 @@ body {
   background: #6fcee4;
   @include rotate(-68deg);
 
-  .detail-row {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  }
-  .details {
+  $circle03: 90px;
+  .romero-britto-circle {
     background: #5987c5;
-    height: 90px;
-    width: 90px;
-    border-radius: 100%;
+    width: $circle03;
+    height: $circle03;
   }
 }
 
@@ -122,18 +127,14 @@ body {
   background: #fff001;
   @include rotate(11deg);
 
-  .detail-row {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    @include rotate(-19deg);
+  .romero-britto-circle-container {
+    @include rotate(-20deg);
   }
-  .details {
+  $circle05: 140px;
+  .romero-britto-circle {
     background: #ffd203;
-    height: 140px;
-    width: 140px;
-    border-radius: 100%;
+    width: $circle05;
+    height: $circle05;
   }
 }
 
@@ -192,6 +193,25 @@ $heart-mid: 360px;
   top: 190px;
   left: 480px;
 
+  .heart-square-boundaries {
+    overflow: hidden;
+    display: inline-block;
+    height: $heart-mid;
+    width: $heart-mid;
+    margin: 0 10px;
+    position: absolute;
+    top: 0;
+    @include rotate(-45deg);
+  }
+
+  .heart-circle-boundaries {
+    overflow: hidden;
+    border-radius: 50%;
+    height: $heart-mid;
+    position: absolute;
+    width: $heart-mid;
+  }
+
   .heart {
     background-color: #d31145;
     display: inline-block;
@@ -238,6 +258,69 @@ $heart-mid: 360px;
         left: 188px;
         top: -27px;
       }
+    }
+
+  }
+}
+
+$flower-box: 420px;
+.flower-box {
+  z-index: 20;
+  box-sizing: border-box;
+  position: absolute;
+  width: $flower-box;
+  height: $flower-box;
+
+  $flower-inner: 110px;
+  $flower-inner-dist: calc(50% - (110px * 0.5));
+  .flower-inner {
+    position: absolute;
+    background: #ee4035;
+    box-sizing: border-box;
+    border: 27px solid black;
+    border-radius: 100%;
+    width: $flower-inner;
+    height: $flower-inner;
+    top: $flower-inner-dist;
+    left: $flower-inner-dist;
+  }
+
+  $flower-inner-back: 190px;
+  $flower-inner-back-dist: calc(50% - (190px * 0.5));
+  .flower-inner-back {
+    position: absolute;
+    background: #ee4035;
+    border-radius: 100%;
+    width: $flower-inner-back;
+    height: $flower-inner-back;
+    top: $flower-inner-back-dist;
+    left: $flower-inner-back-dist;
+  }
+
+  .flower-petal {
+    position: absolute;
+    background: #ee4035;
+    border-radius: 100%;
+    box-sizing: border-box;
+    border: 27px solid black;
+
+    &.petal01 {
+      height: 140px;
+      width: 160px;
+      top: 20px;
+      left: 159px;
+    }
+    &.petal02 {
+      height: 160px;
+      width: 180px;
+      top: 130px;
+      left: 233px;
+    }
+    &.petal03 {
+      height: 190px;
+      width: 180px;
+      top: 226px;
+      left: 133px;
     }
   }
 }

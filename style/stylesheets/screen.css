@@ -8,12 +8,25 @@ body {
 }
 
 /* line 12, ../sass/screen.scss */
+.romero-britto-circle-container {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 19, ../sass/screen.scss */
+.romero-britto-circle {
+  border-radius: 100%;
+}
+
+/* line 23, ../sass/screen.scss */
 #picture-container {
   width: 1500px;
   height: 667px;
   position: relative;
 }
-/* line 17, ../sass/screen.scss */
+/* line 28, ../sass/screen.scss */
 #picture-container img {
   position: absolute;
   top: 0;
@@ -22,7 +35,7 @@ body {
   opacity: 0.3;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 #a-new-day {
   position: absolute;
   overflow: hidden;
@@ -32,7 +45,7 @@ body {
   height: 100%;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .background-square-01 {
   position: absolute;
   overflow: hidden;
@@ -47,7 +60,7 @@ body {
   /* Chrome, Safari, Opera */
   transform: rotate(-68deg);
 }
-/* line 46, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .background-square-01 .details {
   position: absolute;
   left: 22px;
@@ -61,7 +74,7 @@ body {
   transform: rotate(-41deg);
 }
 
-/* line 56, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 .background-square-02 {
   position: absolute;
   overflow: hidden;
@@ -76,22 +89,14 @@ body {
   /* Chrome, Safari, Opera */
   transform: rotate(-68deg);
 }
-/* line 66, ../sass/screen.scss */
-.background-square-02 .detail-row {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-/* line 72, ../sass/screen.scss */
-.background-square-02 .details {
+/* line 78, ../sass/screen.scss */
+.background-square-02 .romero-britto-circle {
   background: #5987c5;
-  height: 90px;
   width: 90px;
-  border-radius: 100%;
+  height: 90px;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 85, ../sass/screen.scss */
 .background-square-03 {
   position: absolute;
   overflow: hidden;
@@ -108,7 +113,7 @@ body {
   /* Chrome, Safari, Opera */
   transform: rotate(-42deg);
 }
-/* line 92, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .background-square-03 .details {
   position: relative;
   left: 35px;
@@ -124,7 +129,7 @@ body {
   transform: rotate(-30deg);
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .background-square-04 {
   position: absolute;
   overflow: hidden;
@@ -140,7 +145,7 @@ body {
   transform: rotate(-14deg);
 }
 
-/* line 115, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .background-square-05 {
   position: absolute;
   overflow: hidden;
@@ -155,27 +160,22 @@ body {
   /* Chrome, Safari, Opera */
   transform: rotate(11deg);
 }
-/* line 125, ../sass/screen.scss */
-.background-square-05 .detail-row {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  -ms-transform: rotate(-19deg);
+/* line 130, ../sass/screen.scss */
+.background-square-05 .romero-britto-circle-container {
+  -ms-transform: rotate(-20deg);
   /* IE 9 */
-  -webkit-transform: rotate(-19deg);
+  -webkit-transform: rotate(-20deg);
   /* Chrome, Safari, Opera */
-  transform: rotate(-19deg);
+  transform: rotate(-20deg);
 }
-/* line 132, ../sass/screen.scss */
-.background-square-05 .details {
+/* line 134, ../sass/screen.scss */
+.background-square-05 .romero-britto-circle {
   background: #ffd203;
-  height: 140px;
   width: 140px;
-  border-radius: 100%;
+  height: 140px;
 }
 
-/* line 140, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 .background-square-06 {
   position: absolute;
   overflow: hidden;
@@ -190,14 +190,14 @@ body {
   /* Chrome, Safari, Opera */
   transform: rotate(56deg);
 }
-/* line 150, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .background-square-06 .detail-row {
   position: absolute;
   width: 100%;
   font-size: 70px;
   white-space: nowrap;
 }
-/* line 156, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .background-square-06 .detail01 {
   -ms-transform: rotate(-63deg);
   /* IE 9 */
@@ -207,7 +207,7 @@ body {
   top: 44px;
   left: -80px;
 }
-/* line 161, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 .background-square-06 .detail02 {
   -ms-transform: rotate(228deg);
   /* IE 9 */
@@ -217,7 +217,7 @@ body {
   top: 110px;
   left: 45px;
 }
-/* line 166, ../sass/screen.scss */
+/* line 167, ../sass/screen.scss */
 .background-square-06 .detail03 {
   -ms-transform: rotate(298deg);
   /* IE 9 */
@@ -227,7 +227,7 @@ body {
   top: 230px;
   left: 62px;
 }
-/* line 171, ../sass/screen.scss */
+/* line 172, ../sass/screen.scss */
 .background-square-06 .detail04 {
   -ms-transform: rotate(292deg);
   /* IE 9 */
@@ -237,7 +237,7 @@ body {
   top: 400px;
   left: -58px;
 }
-/* line 176, ../sass/screen.scss */
+/* line 177, ../sass/screen.scss */
 .background-square-06 .detail05 {
   -ms-transform: rotate(176deg);
   /* IE 9 */
@@ -247,7 +247,7 @@ body {
   top: 260px;
   left: -104px;
 }
-/* line 181, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 .background-square-06 .detail06 {
   -ms-transform: rotate(96deg);
   /* IE 9 */
@@ -258,7 +258,7 @@ body {
   left: -131px;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .heart-mid {
   -ms-transform: rotate(-5deg);
   /* IE 9 */
@@ -269,7 +269,30 @@ body {
   top: 190px;
   left: 480px;
 }
-/* line 195, ../sass/screen.scss */
+/* line 196, ../sass/screen.scss */
+.heart-mid .heart-square-boundaries {
+  overflow: hidden;
+  display: inline-block;
+  height: 360px;
+  width: 360px;
+  margin: 0 10px;
+  position: absolute;
+  top: 0;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+/* line 207, ../sass/screen.scss */
+.heart-mid .heart-circle-boundaries {
+  overflow: hidden;
+  border-radius: 50%;
+  height: 360px;
+  position: absolute;
+  width: 360px;
+}
+/* line 215, ../sass/screen.scss */
 .heart-mid .heart {
   background-color: #d31145;
   display: inline-block;
@@ -284,7 +307,7 @@ body {
   /* Chrome, Safari, Opera */
   transform: rotate(-45deg);
 }
-/* line 205, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 .heart-mid .heart:before, .heart-mid .heart:after {
   content: "";
   background-color: #d31145;
@@ -293,34 +316,94 @@ body {
   position: absolute;
   width: 360px;
 }
-/* line 214, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .heart-mid .heart:before {
   top: -180px;
   left: 0;
 }
-/* line 218, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 .heart-mid .heart:after {
   left: 180px;
   top: 0;
 }
-/* line 223, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .heart-mid .heart.heart-shaddow {
   left: -20px;
   background: black;
   border: 20px solid black;
 }
-/* line 228, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 .heart-mid .heart.heart-shaddow:before, .heart-mid .heart.heart-shaddow:after {
   background: black;
   border: 24px solid black;
 }
-/* line 233, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .heart-mid .heart.heart-shaddow:before {
   top: -232px;
   left: -21px;
 }
-/* line 237, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .heart-mid .heart.heart-shaddow:after {
   left: 188px;
   top: -27px;
+}
+
+/* line 267, ../sass/screen.scss */
+.flower-box {
+  z-index: 20;
+  box-sizing: border-box;
+  position: absolute;
+  width: 420px;
+  height: 420px;
+}
+/* line 276, ../sass/screen.scss */
+.flower-box .flower-inner {
+  position: absolute;
+  background: #ee4035;
+  box-sizing: border-box;
+  border: 27px solid black;
+  border-radius: 100%;
+  width: 110px;
+  height: 110px;
+  top: calc(50% - (110px * 0.5));
+  left: calc(50% - (110px * 0.5));
+}
+/* line 290, ../sass/screen.scss */
+.flower-box .flower-inner-back {
+  position: absolute;
+  background: #ee4035;
+  border-radius: 100%;
+  width: 190px;
+  height: 190px;
+  top: calc(50% - (190px * 0.5));
+  left: calc(50% - (190px * 0.5));
+}
+/* line 300, ../sass/screen.scss */
+.flower-box .flower-petal {
+  position: absolute;
+  background: #ee4035;
+  border-radius: 100%;
+  box-sizing: border-box;
+  border: 27px solid black;
+}
+/* line 307, ../sass/screen.scss */
+.flower-box .flower-petal.petal01 {
+  height: 140px;
+  width: 160px;
+  top: 20px;
+  left: 159px;
+}
+/* line 313, ../sass/screen.scss */
+.flower-box .flower-petal.petal02 {
+  height: 160px;
+  width: 180px;
+  top: 130px;
+  left: 233px;
+}
+/* line 319, ../sass/screen.scss */
+.flower-box .flower-petal.petal03 {
+  height: 190px;
+  width: 180px;
+  top: 226px;
+  left: 133px;
 }
