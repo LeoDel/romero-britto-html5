@@ -2,13 +2,18 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 9, ../sass/screen.scss */
+/* line 8, ../sass/screen.scss */
+body {
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+/* line 12, ../sass/screen.scss */
 #picture-container {
   width: 1500px;
   height: 667px;
   position: relative;
 }
-/* line 14, ../sass/screen.scss */
+/* line 17, ../sass/screen.scss */
 #picture-container img {
   position: absolute;
   top: 0;
@@ -17,7 +22,7 @@
   opacity: 0.3;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 26, ../sass/screen.scss */
 #a-new-day {
   position: absolute;
   overflow: hidden;
@@ -27,7 +32,7 @@
   height: 100%;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 .background-square-01 {
   position: absolute;
   overflow: hidden;
@@ -42,7 +47,7 @@
   /* Chrome, Safari, Opera */
   transform: rotate(-68deg);
 }
-/* line 44, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .background-square-01 .details {
   position: absolute;
   left: 22px;
@@ -56,7 +61,7 @@
   transform: rotate(-41deg);
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .background-square-02 {
   position: absolute;
   overflow: hidden;
@@ -71,14 +76,14 @@
   /* Chrome, Safari, Opera */
   transform: rotate(-68deg);
 }
-/* line 64, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .background-square-02 .detail-row {
   position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-/* line 70, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .background-square-02 .details {
   background: #5987c5;
   height: 90px;
@@ -86,7 +91,7 @@
   border-radius: 100%;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .background-square-03 {
   position: absolute;
   overflow: hidden;
@@ -103,7 +108,7 @@
   /* Chrome, Safari, Opera */
   transform: rotate(-42deg);
 }
-/* line 91, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 .background-square-03 .details {
   position: relative;
   left: 35px;
@@ -119,7 +124,7 @@
   transform: rotate(-30deg);
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 104, ../sass/screen.scss */
 .background-square-04 {
   position: absolute;
   overflow: hidden;
@@ -133,4 +138,189 @@
   -webkit-transform: rotate(-14deg);
   /* Chrome, Safari, Opera */
   transform: rotate(-14deg);
+}
+
+/* line 115, ../sass/screen.scss */
+.background-square-05 {
+  position: absolute;
+  overflow: hidden;
+  top: -50px;
+  left: 954px;
+  height: 810px;
+  width: 530px;
+  background: #fff001;
+  -ms-transform: rotate(11deg);
+  /* IE 9 */
+  -webkit-transform: rotate(11deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(11deg);
+}
+/* line 125, ../sass/screen.scss */
+.background-square-05 .detail-row {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  -ms-transform: rotate(-19deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-19deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-19deg);
+}
+/* line 132, ../sass/screen.scss */
+.background-square-05 .details {
+  background: #ffd203;
+  height: 140px;
+  width: 140px;
+  border-radius: 100%;
+}
+
+/* line 140, ../sass/screen.scss */
+.background-square-06 {
+  position: absolute;
+  overflow: hidden;
+  top: 250px;
+  left: 1115px;
+  height: 810px;
+  width: 290px;
+  background: #6fcee4;
+  -ms-transform: rotate(56deg);
+  /* IE 9 */
+  -webkit-transform: rotate(56deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(56deg);
+}
+/* line 150, ../sass/screen.scss */
+.background-square-06 .detail-row {
+  position: absolute;
+  width: 100%;
+  font-size: 70px;
+  white-space: nowrap;
+}
+/* line 156, ../sass/screen.scss */
+.background-square-06 .detail01 {
+  -ms-transform: rotate(-63deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-63deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-63deg);
+  top: 44px;
+  left: -80px;
+}
+/* line 161, ../sass/screen.scss */
+.background-square-06 .detail02 {
+  -ms-transform: rotate(228deg);
+  /* IE 9 */
+  -webkit-transform: rotate(228deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(228deg);
+  top: 110px;
+  left: 45px;
+}
+/* line 166, ../sass/screen.scss */
+.background-square-06 .detail03 {
+  -ms-transform: rotate(298deg);
+  /* IE 9 */
+  -webkit-transform: rotate(298deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(298deg);
+  top: 230px;
+  left: 62px;
+}
+/* line 171, ../sass/screen.scss */
+.background-square-06 .detail04 {
+  -ms-transform: rotate(292deg);
+  /* IE 9 */
+  -webkit-transform: rotate(292deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(292deg);
+  top: 400px;
+  left: -58px;
+}
+/* line 176, ../sass/screen.scss */
+.background-square-06 .detail05 {
+  -ms-transform: rotate(176deg);
+  /* IE 9 */
+  -webkit-transform: rotate(176deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(176deg);
+  top: 260px;
+  left: -104px;
+}
+/* line 181, ../sass/screen.scss */
+.background-square-06 .detail06 {
+  -ms-transform: rotate(96deg);
+  /* IE 9 */
+  -webkit-transform: rotate(96deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(96deg);
+  top: 350px;
+  left: -131px;
+}
+
+/* line 189, ../sass/screen.scss */
+.heart-mid {
+  -ms-transform: rotate(-5deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-5deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-5deg);
+  position: absolute;
+  top: 190px;
+  left: 480px;
+}
+/* line 195, ../sass/screen.scss */
+.heart-mid .heart {
+  background-color: #d31145;
+  display: inline-block;
+  height: 360px;
+  width: 360px;
+  margin: 0 10px;
+  position: absolute;
+  top: 0;
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
+/* line 205, ../sass/screen.scss */
+.heart-mid .heart:before, .heart-mid .heart:after {
+  content: "";
+  background-color: #d31145;
+  border-radius: 50%;
+  height: 360px;
+  position: absolute;
+  width: 360px;
+}
+/* line 214, ../sass/screen.scss */
+.heart-mid .heart:before {
+  top: -180px;
+  left: 0;
+}
+/* line 218, ../sass/screen.scss */
+.heart-mid .heart:after {
+  left: 180px;
+  top: 0;
+}
+/* line 223, ../sass/screen.scss */
+.heart-mid .heart.heart-shaddow {
+  left: -20px;
+  background: black;
+  border: 20px solid black;
+}
+/* line 228, ../sass/screen.scss */
+.heart-mid .heart.heart-shaddow:before, .heart-mid .heart.heart-shaddow:after {
+  background: black;
+  border: 24px solid black;
+}
+/* line 233, ../sass/screen.scss */
+.heart-mid .heart.heart-shaddow:before {
+  top: -232px;
+  left: -21px;
+}
+/* line 237, ../sass/screen.scss */
+.heart-mid .heart.heart-shaddow:after {
+  left: 188px;
+  top: -27px;
 }

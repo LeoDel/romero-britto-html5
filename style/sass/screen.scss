@@ -2,9 +2,12 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
 //@import "compass/reset";
 @import "tools";
+
+body {
+  font-family: 'Baloo Bhaina', cursive;
+}
 
 #picture-container {
   width: 1500px;
@@ -19,7 +22,6 @@
     opacity: 0.3;
   }
 }
-
 
 #a-new-day {
   position: absolute;
@@ -50,9 +52,9 @@
     @include rotate(-41deg);
   }
 }
+
 .background-square-02 {
   position: absolute;
-  //z-index: 33;
   overflow: hidden;
   top: -415px;
   left: 22px;
@@ -74,18 +76,17 @@
     border-radius: 100%;
   }
 }
+
 .background-square-03 {
-   //z-index: 32;
-   position: absolute;
-   overflow: hidden;
-   display: flex;
-   //flex-direction: column;
-   justify-content: space-between;
-   top: -370px;
-   left: 450px;
-   height: 1280px;
-   width: 500px;
-   background: #fff001;
+  position: absolute;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  top: -370px;
+  left: 450px;
+  height: 1280px;
+  width: 500px;
+  background: #fff001;
   @include rotate(-42deg);
 
   .details {
@@ -99,13 +100,144 @@
     @include rotate(-30deg);
   }
 }
+
 .background-square-04 {
-   position: absolute;
-   overflow: hidden;
-   top: -370px;
-   left: 720px;
-   height: 1280px;
-   width: 370px;
-   background: #fff;
+  position: absolute;
+  overflow: hidden;
+  top: -370px;
+  left: 720px;
+  height: 1280px;
+  width: 370px;
+  background: #fff;
   @include rotate(-14deg);
+}
+
+.background-square-05 {
+  position: absolute;
+  overflow: hidden;
+  top: -50px;
+  left: 954px;
+  height: 810px;
+  width: 530px;
+  background: #fff001;
+  @include rotate(11deg);
+
+  .detail-row {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include rotate(-19deg);
+  }
+  .details {
+    background: #ffd203;
+    height: 140px;
+    width: 140px;
+    border-radius: 100%;
+  }
+}
+
+.background-square-06 {
+  position: absolute;
+  overflow: hidden;
+  top: 250px;
+  left: 1115px;
+  height: 810px;
+  width: 290px;
+  background: #6fcee4;
+  @include rotate(56deg);
+
+  .detail-row {
+    position: absolute;
+    width: 100%;
+    font-size: 70px;
+    white-space: nowrap;
+  }
+  .detail01 {
+    @include rotate(-63deg);
+    top: 44px;
+    left: -80px;
+  }
+  .detail02 {
+    @include rotate(228deg);
+    top: 110px;
+    left: 45px;
+  }
+  .detail03 {
+    @include rotate(298deg);
+    top: 230px;
+    left: 62px;
+  }
+  .detail04 {
+    @include rotate(292deg);
+    top: 400px;
+    left: -58px;
+  }
+  .detail05 {
+    @include rotate(176deg);
+    top: 260px;
+    left: -104px;
+  }
+  .detail06 {
+    @include rotate(96deg);
+    top: 350px;
+    left: -131px;
+  }
+}
+
+$heart-mid: 360px;
+.heart-mid {
+  @include rotate(-5deg);
+  position: absolute;
+  top: 190px;
+  left: 480px;
+
+  .heart {
+    background-color: #d31145;
+    display: inline-block;
+    height: $heart-mid;
+    width: $heart-mid;
+    margin: 0 10px;
+    position: absolute;
+    top: 0;
+    @include rotate(-45deg);
+
+    &:before,
+    &:after {
+      content: "";
+      background-color: #d31145;
+      border-radius: 50%;
+      height: $heart-mid;
+      position: absolute;
+      width: $heart-mid;
+    }
+    &:before {
+      top: -($heart-mid * 0.5);
+      left: 0;
+    }
+    &:after {
+      left: ($heart-mid * 0.5);
+      top: 0;
+    }
+
+    &.heart-shaddow {
+      left: -20px;
+      background: black;
+      border: 20px solid black;
+
+      &:before,
+      &:after {
+        background: black;
+        border: 24px solid black;
+      }
+      &:before {
+        top: -232px;
+        left: -21px;
+      }
+      &:after {
+        left: 188px;
+        top: -27px;
+      }
+    }
+  }
 }
